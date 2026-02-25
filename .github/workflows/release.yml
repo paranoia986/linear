@@ -5,6 +5,9 @@ on:
     tags:
       - 'v*' # 当推送到以 v 开头的标签时触发，如 v1.0.0
 
+permissions:
+  contents: write
+
 jobs:
   build:
     name: Build for ${{ matrix.os }}
